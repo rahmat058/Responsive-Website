@@ -1,10 +1,118 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- link CSS -->
+  <link rel="stylesheet" href="./style.css">
   <title>Responsive Website</title>
 </head>
 <body>
-  
+  <section id="header">
+    <div class="container">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <div class="header-text">
+        <h1>The purpose is to <br> teach, bring to learning to people</h1>
+        <span class="square"></span>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo magnam ex incidunt officiis quisquam quibusdam tempore. Optio quo consequatur corrupti facere autem voluptas explicabo!</p>
+        <button class="common-btn">Read More</button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav id="sideNav">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">FEATURES</a></li>
+      <li><a href="#">COURSES</a></li>
+      <li><a href="#">OFFER</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <img src="./images/menu.png" alt="menu" id="menuBtn">
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-left-col">
+      <img src="./images/about.png" alt="about" class="">
+    </div>
+    <div class="about-right-col">
+      <div class="about-text">
+        <h1>About Us</h1>
+        <span class="square"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem tempora minima non velit voluptas, repellat possimus! Odit et velit vero, aut ea est at sit dignissimos totam labore eaque placeat? Beatae in labore ex cupiditate? Placeat doloribus voluptates, itaque ut inventore ipsum, deserunt deleniti minus non veniam rerum similique dignissimos, aliquid hic ullam reiciendis. Dolorum, inventore exercitationem. Corporis quaerat odio impedit dolorum dicta ducimus nulla accusamus explicabo quasi ad! Assumenda minima et dicta veritatis quibusdam commodi beatae expedita quaerat illum quam. Voluptatum recusandae doloremque facere numquam veritatis repellat illo asperiores, voluptas nam esse explicabo, laboriosam ab minima laudantium eius!</p> <br>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div> <br>
+
+        <h2>"Learning is most attained by chance, it must be sought for with order and attended to with deligence"</h2>
+        <h3>----Abigail Adams</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="feature-row">
+      <div class="feature-col">
+        <img src="./images/pic-1.png" alt="pic-1">
+        <h4>Learn Anywhere</h4>
+        <p>Switch between your computer, tablet or mobile device</p>
+      </div>
+      <div class="feature-col">
+        <img src="./images/pic-2.png" alt="pic-2">
+        <h4>Expert Teachers</h4>
+        <p>Learn from industry experts who are passionate about teaching.</p>
+      </div>
+      <div class="feature-col">
+        <img src="./images/pic-3.png" alt="pic-3">
+        <h4>Unlimited Access</h4>
+        <p>Choose what you'd like to learn from out extensive subscription library.</p>
+      </div>
+    </div>
+
+    <div class="feature-btn">
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
+      </div>
+      <button class="common-btn">Start Free Trial</button>
+    </div>
+  </section>
+
+  <script>
+    let menuBtn = document.getElementById('menuBtn')
+    let sideNav = document.getElementById('sideNav')
+
+    sideNav.style.right = '-250px'
+    menuBtn.onclick = function() {
+      if(sideNav.style.right == "-250px") {
+        sideNav.style.right = "0"
+      } else {
+        sideNav.style.right = "-250px"
+      }
+    }
+  </script>
 </body>
 </html>
