@@ -273,3 +273,14 @@ form input {
 .btn-box button {
   flex-basis: 48%;
 }
+
+/* Footer Section */
+#footer {
+  padding: 50px 0 30px;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #f67c92;
+}
