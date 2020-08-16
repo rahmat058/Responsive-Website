@@ -109,7 +109,8 @@ nav ul li a {
 
 
 /* About Section */
-#about {
+#about, 
+#offer {
   padding: 100px 0;
   display: flex;
   align-items: center;
@@ -221,4 +222,10 @@ nav ul li a {
 
 .course-text button {
   margin: 30px 0;
+}
+
+
+/* Offer Section */
+#offer  button{
+  margin:  30px 0;
 }
